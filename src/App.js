@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Axios from 'axios';
+import { render } from '@testing-library/react';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,6 +23,19 @@ async getWeatherData() {
   } catch(error) {
     console.error(error);
   }
+}
+
+}
+
+render() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        
+      </header>
+
+    </div>
+  )
 }
 
 export default App;
