@@ -18,7 +18,7 @@ async getWeatherData() {
   try {
     const response = await Axios.get("");
 
-    this.StateChangedEvent({weather: response.data });
+    this.setState({weather: response.data });
   }
 }
 
