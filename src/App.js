@@ -19,6 +19,8 @@ async getWeatherData() {
     const response = await Axios.get("");
 
     this.setState({weather: response.data });
+  } catch(error) {
+    console.error(error);
   }
 }
 
